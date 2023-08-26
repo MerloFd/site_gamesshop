@@ -1,0 +1,146 @@
+*{ /*reset*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+input,
+textarea {
+    font-family: 'Roboto', sans-serif;
+}
+
+header,
+header h1,
+section h2,
+section h3,
+form button {
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+}
+
+header { /*alterando nossa barra de navegação*/
+    padding: 16px 0;
+    background-color: #182C61;
+    color: #fff;
+}
+
+nav li { /*header alterando a ordem dos links*/
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+nav li a { /*header estilizando os links*/
+    color: #fff;
+    text-decoration: none;
+}
+
+.container { /*tamanho da tela*/
+    max-width: 1288px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container { /*flex box e alinhamento*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .container { /*trazendo a escrita ao topo*/
+    align-items: flex-start;
+}
+
+.brands-list img{ /*defindo tamanho imagens marcas*/
+    height: 28px;
+}
+
+.brands-list li{ /*deixando uma imagem marca lado a lado*/
+    display: inline;
+    margin-right: 8px;
+}
+
+#about p {
+    margin-bottom: 16px;
+}
+
+section { /*espaçamento interno, descolar os elementos do header*/
+    padding: 16px;
+    color: #182C61;
+}
+
+section h2 { /*espaçamento externo titulo da section*/
+    margin: 24px 0;
+}
+
+.store-front { /*imagem da loja*/
+    margin-right: 32px;
+}
+
+.social-links img{
+    height: 36px;
+}
+
+.social-links li{
+    display: inline;
+    margin-right: 18px;
+}
+
+.social-links li a{
+    text-decoration: none;
+}
+
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea{
+    resize: none;
+    height: 180px;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+form button {
+    background-color: #182C61;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #2042a0;
+}
+
+nav li a:hover{
+    font-size: 20px;
+}
+
+input:focus, textarea:focus { /*barra quando ele é selecionado, o focus*/
+    outline-color: #101b3b;
+}
+
+footer {
+    background-color: #182C61;
+    color: #fff;
+    padding: 20px 0;
+}
+
